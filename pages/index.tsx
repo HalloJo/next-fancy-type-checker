@@ -1,9 +1,14 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { useRef } from 'react'
+import Logo from '../components/Logo/Logo'
+import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
+
+  const logoRef = useRef(null)
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,9 +18,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          The Next Fancy Type Checker!
-        </h1>
+        <Logo ref={logoRef} />
       </main>
     </div>
   )

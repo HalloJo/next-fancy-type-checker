@@ -1,0 +1,23 @@
+.logo {
+  color: #3700ff;
+
+  .logoPart {
+    font-family: "Edu QLD Beginner", cursive;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1;
+
+    &:nth-child(1) {
+      margin: 0 0 -0.8rem 4rem;
+    }
+    &:nth-child(2) {
+      margin: 0 0 -0.8rem 2rem;
+    }
+    &:nth-child(3) {
+      margin: -0.5rem 0 0 0;
+    }
+    &:nth-child(4) {
+      margin: 0 0 0 2.8rem;
+    }
+  }
+}
