@@ -4,25 +4,11 @@ import {gsap, Back} from 'gsap';
 import { useEffect, useRef} from 'react';
 import Logo from '../components/Logo/Logo'
 import styles from '../styles/Home.module.scss'
+import { useTransitionController } from '../transition-component/hooks/useTransitionController';
+import { useEnterTransition } from '../transition-component/hooks/useEnterTransition';
+import { setupTransitionInTimeline } from './index.transitions';
 
 const Home: NextPage = () => {
-  const logoRef = useRef(null)
-  const logoParts = gsap.utils.selector(logoRef)
-
-  
-  useEffect(()=> {
-    const timeline = gsap.timeline({duration: 0.3})
-
-    timeline.fromTo(logoParts(".logoPart"), {
-      autoAlpha: 0,
-      x: -20,
-    },{
-      autoAlpha: 1,
-      x: 0,
-      stagger: 0.1,
-      ease: Back.easeOut.config(5),
-    })
-  }, [])
 
   return (
     <div className={styles.container}>
@@ -36,7 +22,10 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <Logo ref={logoRef} />
+        <div>
+          <Logo />
+          
+        </div>
       </main>
     </div>
   )

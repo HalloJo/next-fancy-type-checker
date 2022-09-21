@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mediamonks/core-transition-component": "^1.0.1",
     "classnames": "^2.3.1",
     "gsap": "file:gsap-bonus.tgz",
+    "lodash-es": "^4.17.21",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-use": "^17.4.0",
     "sass": "^1.54.4"
   },
   "devDependencies": {
