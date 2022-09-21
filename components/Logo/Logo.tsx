@@ -11,19 +11,11 @@ import { setupTransitionInTimeline } from './Logo.transitions';
 
 const Logo = forwardRef<HTMLDivElement>((props, ref):ReactElement => {
   const elementRef = useRef<HTMLDivElement>(null)
-  const firstLineRef = useRef<HTMLParagraphElement>(null)
-  const secondLineRef = useRef<HTMLParagraphElement>(null)
-  const thirdLineRef = useRef<HTMLParagraphElement>(null)
-  const fourthLineRef = useRef<HTMLParagraphElement>(null)
 
   const transitionController = useTransitionController(({
     ref: elementRef,
     refs: {
       elementRef,
-      firstLineRef,
-      secondLineRef,
-      thirdLineRef,
-      fourthLineRef
     },
     setupTransitionInTimeline,
   }));
@@ -32,10 +24,10 @@ const Logo = forwardRef<HTMLDivElement>((props, ref):ReactElement => {
     
     return (
         <div className={styles.logo} ref={elementRef}>
-            <p className={classNames(styles.logoPart)} ref={firstLineRef}>Next</p>
-            <p className={classNames(styles.logoPart)} ref={secondLineRef}>Fancy</p>
-            <p className={classNames(styles.logoPart)} ref={thirdLineRef}>Type</p>
-            <p className={classNames(styles.logoPart)} ref={fourthLineRef}>Checker</p>
+            <p className={classNames(styles.logoPart)}>Next</p>
+            <p className={classNames(styles.logoPart)}>Fancy</p>
+            <p className={classNames(styles.logoPart)}>Type</p>
+            <p className={classNames(styles.logoPart)}>Checker</p>
         </div>
     )
 })
