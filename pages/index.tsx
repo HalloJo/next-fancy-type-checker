@@ -1,14 +1,17 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import {gsap, Back} from 'gsap';
-import { useEffect, useRef} from 'react';
+import { useEffect, useRef, useState} from 'react';
 import Logo from '../components/Logo/Logo'
 import styles from '../styles/Home.module.scss'
 import { useTransitionController } from '../transition-component/hooks/useTransitionController';
 import { useEnterTransition } from '../transition-component/hooks/useEnterTransition';
 import { setupTransitionInTimeline } from './index.transitions';
+import Output from '../components/Output/Output';
 
 const Home: NextPage = () => {
+
+  const [output, setOutput] = useState("The quick brown fox jumps over the lazy dog")
 
   return (
     <div className={styles.container}>
@@ -24,7 +27,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <div>
           <Logo />
-          
+          <Output output={output} />
         </div>
       </main>
     </div>

@@ -1,0 +1,15 @@
+.output {
+  background-color: darkgreen;
+  width: 75%;
+  color: white;
+  font-weight: 400;
+  font-size: 4rem;
+  padding: 40px;
+  text-align: left;
+  color: green;
+  hyphens: auto;
+
+  .outputText {
+    hyphens: auto;
+  }
+}
