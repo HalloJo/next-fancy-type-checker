@@ -1,13 +1,13 @@
 .container {
-  padding: 0 2rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gantari", sans-serif;
+  line-height: 1;
+  background-color: #61132f;
+  min-height: 100vh;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }

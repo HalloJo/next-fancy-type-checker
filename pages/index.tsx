@@ -25,10 +25,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <div>
-          <Logo />
-          <Output output={output} />
-        </div>
+        <Logo />
+        <Output output={output} />
       </main>
     </div>
   )
