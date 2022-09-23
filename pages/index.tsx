@@ -8,6 +8,7 @@ import { useTransitionController } from '../transition-component/hooks/useTransi
 import { useEnterTransition } from '../transition-component/hooks/useEnterTransition';
 import { setupTransitionInTimeline } from './index.transitions';
 import Output from '../components/Output/Output';
+import OutputOptions from '../components/OutputOptions/OutputOptions';
 
 const Home: NextPage = () => {
 
@@ -25,7 +26,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <Logo />
+        <OutputOptions />
         <Output output={output} />
       </main>
     </div>

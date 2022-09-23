@@ -1,6 +1,6 @@
 .output {
   background-color: #151327;
-  color: #2645d3;
+  color: #ed286a;
   font-weight: 400;
   font-size: 4rem;
   padding: 40px;
@@ -10,5 +10,7 @@
 
   .outputText {
     hyphens: auto;
+    margin: 0;
+    line-height: 0.9;
   }
 }
