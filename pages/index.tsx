@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <OutputOptions />
+        <OutputOptions output={output} onChange={setOutput} />
         <Output output={output} />
       </main>
     </div>

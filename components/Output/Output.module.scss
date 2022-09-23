@@ -5,11 +5,11 @@
   font-size: 4rem;
   padding: 40px;
   text-align: left;
-  hyphens: auto;
   height: 100vh;
+  width: 75%;
+  word-break: break-word;
 
   .outputText {
-    hyphens: auto;
     margin: 0;
     line-height: 0.9;
   }
